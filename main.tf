@@ -194,7 +194,7 @@ resource "aws_iam_policy" "datadog_resource_collection_policy" {
 }
 
 module "datadog_integration_role" {
-  source  = "schubergphilis/mcaf-role/aws"
+  source  = "schubergphilis-ep/mcaf-role/aws"
   version = "~> 0.5.3"
 
   name          = local.datadog_integration_role_name
